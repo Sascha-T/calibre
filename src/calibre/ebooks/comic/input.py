@@ -50,7 +50,7 @@ def find_pages(dir, sort_on_mtime=False, verbose=False):
     :param sort_on_mtime: If True sort pages based on their last modified time.
                           Otherwise, sort alphabetically.
     '''
-    extensions = {'jpeg', 'jpg', 'gif', 'png', 'webp'}
+    extensions = {'jpeg', 'jpg', 'gif', 'png', 'webp', 'avif'}
     pages = []
     for datum in os.walk(dir):
         for name in datum[-1]:
